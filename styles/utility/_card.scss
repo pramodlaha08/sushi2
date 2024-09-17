@@ -1,0 +1,11 @@
+.card{
+    gap: 10px;
+
+    &__img{
+        height: 9rem;
+    } 
+    & img{
+        height: 100%;
+        width: 100%;
+    }
+}

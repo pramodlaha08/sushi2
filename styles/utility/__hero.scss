@@ -1,0 +1,43 @@
+.hero{
+    height: 100%;
+    background-color: aliceblue;
+    position: relative;
+
+    &__img{
+        width: 32rem;
+        left: 50%;
+        top: 70px;
+        transform: translateX(-50%);
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    &__div{
+        width: 34rem;
+        left: 50%;
+        top: 160px;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--heading1{
+            color: #DD2B2B;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+        &--heading2{
+            font-size: 7.5rem;
+            font-weight: 800;
+        }
+
+        &--para{
+            font-size: 1rem;
+            text-align: center;
+            width: 70%;
+        }
+    }
+
+
+}

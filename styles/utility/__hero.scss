@@ -13,12 +13,13 @@
     }
 
     &__div{
-        padding: 9rem 0;
+        padding: 5rem 0;
         text-align: center;
         &--heading1{
             color: #DD2B2B;
             font-size: 2.5rem;
             font-weight: 500;
+            margin-top: 3rem;
         }
 
         &--heading2{
@@ -88,5 +89,13 @@
         bottom: 0;
         left: 0;
         z-index: 0;
+    }
+}
+
+.hero__down{
+    text-align: center;
+
+    img{
+        margin-left: 2rem;
     }
 }

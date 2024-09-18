@@ -1,7 +1,7 @@
 .hero{
     height: 100vh;
     position: relative;
-    background-color: hsl(0, 0%, 85%,.4);
+    // background-color: hsl(0, 0%, 85%,.4);
     &__img{
         position: absolute;
         width: 32rem;
@@ -13,7 +13,7 @@
     }
 
     &__div{
-        padding: 6rem 0;
+        padding: 9rem 0;
         text-align: center;
         &--heading1{
             color: #DD2B2B;
@@ -29,8 +29,20 @@
         &--para{
             font-size: 1rem;
             text-align: center;
-            width: 70%;
+            width: 30%;
             margin: auto;
+        }
+
+        &--buttons{
+            margin-top: 2.5rem;
+            & .btn1{
+                background-color: #DD2B2B;
+                color: #fff;
+                padding: 0.6rem;
+            }
+            & .btn2{
+                color: #fff;
+            }
         }
     }
 
@@ -39,8 +51,11 @@
         color: #DD2B2B;
         &--face{
             position: absolute;
-            left: 0;
+            left: 1.5rem;
             bottom: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
 
         }
         .line-vert{
@@ -53,9 +68,13 @@
                 transform: translate(-50%);
                 width: 2px;
                 height: 100px;
-                background: #000;
+                background: #fff;
                 opacity: 30%;
             }
+        }
+
+        img{
+            width: 45px;
         }
     }
 

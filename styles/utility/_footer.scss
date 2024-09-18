@@ -31,6 +31,7 @@ footer {
             &--img{
                 left:10px;
                 bottom: 4px;
+                position: absolute;
             }
     
             &--heading{
@@ -58,7 +59,8 @@ footer {
             height: 2.8rem;
             padding: 8px 24px 8px 24px;
             border: 1px solid black;
-            background: #fff;
+            background-color: #3a3636;
+            color: #fff;
         }
     }
 }

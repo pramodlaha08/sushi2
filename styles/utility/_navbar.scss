@@ -23,7 +23,7 @@ header {
 
         &--link {
             text-decoration: none;
-            color: black;
+            color: white;
         }
     }
 
@@ -35,10 +35,11 @@ header {
             z-index: -999;
             left: 10px;
             bottom: 4px;
+            position: absolute;
         }
 
         &--heading {
-            color: black;
+            color: white;
             font-size: 2rem;
         }
     }
@@ -58,7 +59,8 @@ header {
             height: 2.8rem;
             padding: 8px 24px 8px 24px;
             border: 1px solid black;
-            background: transparent;
+            background-color: #3a3636;
+            color: #fff;
         }
     }
 }

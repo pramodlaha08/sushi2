@@ -22,8 +22,8 @@ import { Header, Footer, ExploreMenu1, ExploreMenu, ListComponent, HeroSection, 
         app.innerHTML += heroSection;
         app.innerHTML += exploreMenu1HTML;
         app.innerHTML += exploreMenuHTML;
-        app.innerHTML += listComponentHTML;
         app.innerHTML += flavourHTML;
+        app.innerHTML += listComponentHTML;
 
         app.innerHTML += contactHTML;
         app.innerHTML += footerHTML;

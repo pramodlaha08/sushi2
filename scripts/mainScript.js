@@ -12,7 +12,7 @@ document.addEventListener('contentLoaded', () => {
                 <div class="card__img m-auto p-4 h-100 w-100">
                     <img src="${data.image}" alt="${data.heading}">
                 </div>
-                <div class="card__content">
+                <div class="card__content px-4">
                     <h3 class="card__content--heading">${data.heading}</h3>
                     <p class="card__content--para">${data.para}</p>
                 </div>

@@ -1,9 +1,9 @@
 .hero{
     height: 100%;
-    background-color: aliceblue;
     position: relative;
-
+    background-color: hsl(0, 0%, 85%,.4);
     &__img{
+        position: absolute;
         width: 32rem;
         left: 50%;
         top: 70px;
@@ -13,14 +13,8 @@
     }
 
     &__div{
-        width: 34rem;
-        left: 50%;
-        top: 160px;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        padding: 6rem 0;
+        text-align: center;
         &--heading1{
             color: #DD2B2B;
             font-size: 2.5rem;
@@ -36,8 +30,44 @@
             font-size: 1rem;
             text-align: center;
             width: 70%;
+            margin: auto;
+        }
+    }
+
+    &__social{
+        position: relative;
+        color: #DD2B2B;
+        &--face{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+        }
+        .line-vert{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+                width: 2px;
+                height: 100px;
+                background: #000;
+                opacity: 30%;
+            }
         }
     }
 
 
+}
+
+
+.heroSection-container{
+    &--contact{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+    }
 }

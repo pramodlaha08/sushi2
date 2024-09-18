@@ -8,8 +8,8 @@ document.addEventListener('contentLoaded', () => {
     if (menu) {
         menuData.forEach((data) => {
             menu.innerHTML += `
-            <div class="card col-lg-3 col-md-4 col-6">
-                <div class="card__img">
+            <div class="sushi_card_container text-light text-align-left">
+                <div class="card__img m-auto p-4 h-100 w-100">
                     <img src="${data.image}" alt="${data.heading}">
                 </div>
                 <div class="card__content">
@@ -26,12 +26,12 @@ document.addEventListener('contentLoaded', () => {
     if (beverageList) {
         beverageData.forEach((data) => {
             beverageList.innerHTML += `
-            <div class="col-lg-6 col-md-12 d-flex">
-                <div class="">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-between menu_list_item_list">
+                <div class="menu_item">
                     <h3>${data.heading}</h3>
-                    <p>${data.para}</p>
+                    <p class="text-muted">${data.para}</p>
                 </div>
-                <p>${data.price}</p>
+                <p class="text-muted">${data.price}</p>
             </div>
             `;
         });
@@ -42,12 +42,12 @@ document.addEventListener('contentLoaded', () => {
     if (foodList) {
         beverageData.forEach((data) => {
             foodList.innerHTML += `
-            <div class="col-lg-6 col-md-12 d-flex">
-                <div class="">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-between menu_list_item_list">
+                <div class="menu_item">
                     <h3>${data.heading}</h3>
-                    <p>${data.para}</p>
+                    <p class="text-muted">${data.para}</p>
                 </div>
-                <p>${data.price}</p>
+                <p class="text-muted">${data.price}</p>
             </div>
             `;
         });
@@ -58,12 +58,12 @@ document.addEventListener('contentLoaded', () => {
     if (dessertList) {
         beverageData.forEach((data) => {
             dessertList.innerHTML += `
-            <div class="col-lg-6 col-md-12 d-flex">
-                <div class="">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-between menu_list_item_list">
+                <div class="menu_item">
                     <h3>${data.heading}</h3>
-                    <p>${data.para}</p>
+                    <p class="text-muted">${data.para}</p>
                 </div>
-                <p>${data.price}</p>
+                <p class="text-muted">${data.price}</p>
             </div>
             `;
         });

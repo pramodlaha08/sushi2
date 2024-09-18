@@ -1,11 +1,101 @@
-.card{
+.card {
     gap: 10px;
 
-    &__img{
+    &__img {
         height: 9rem;
-    } 
-    & img{
+    }
+
+    & img {
         height: 100%;
         width: 100%;
     }
+}
+
+.explore_menu {
+    padding-top: 200px;
+
+    &--heading {
+        font-size: 1rem;
+        color: red;
+        text-transform: uppercase;
+    }
+
+    &--text {
+        font-size: 4rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+
+        @media (max-width:992px) {
+            font-size: 3rem;
+        }
+
+        @media (max-width:767px) {
+            font-size: 1.8rem;
+        }
+    }
+
+}
+
+.sushi_menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    padding-top: 30px;
+
+    .sushi_card_container {
+        .card__img {
+            max-height: 180px;
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 30px !important;
+            background-color: #4F4F4F;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .card__content {
+            &--heading {
+                font-size: 1.3rem;
+            }
+
+            &--para {
+                color: #8d8787;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.sushi_menu-btn-wrapper {
+    button {
+        font-size: 22px;
+    }
+}
+
+
+.menu_item {
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+.menu_list_item {
+    padding: 20px;
+    border: 1px solid gray;
+    .menu_list_item_list{
+        position: relative;
+        padding: 20px;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            width: 95%;
+            height: 2px;
+            background-color: #4F4F4F;
+        }
+    }
+
 }

@@ -4,11 +4,13 @@ export async function Header() {
     return data;
 }
 
-export async function Footer() {
-    const response = await fetch('/components/Footer.html');
+
+export async function ExploreMenu1() {
+    const response = await fetch('/components/ExploreMenu1.html');
     const data = await response.text();
     return data;
 }
+
 
 export async function ExploreMenu() {
     const response = await fetch('/components/ExploreMenu.html');
@@ -37,6 +39,12 @@ export async function Flavour() {
 
 export async function Contact() {
     const response = await fetch('/components/Contact.html');
+    const data = await response.text();
+    return data;
+}
+
+export async function Footer() {
+    const response = await fetch('/components/Footer.html');
     const data = await response.text();
     return data;
 }

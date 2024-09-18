@@ -1,0 +1,42 @@
+.background {
+
+    background-color: #1a1a1a;
+
+    h3{
+        color: #fff;
+        margin-top: 1rem;
+        font-size: 3.5rem;
+    }
+
+    .para {
+        margin-top: 3rem;
+        border-bottom: 1px solid #fff;
+        padding-bottom:1rem ;
+    }
+}
+
+
+.input {
+
+    input,
+    textarea {
+        outline: none;
+        border: none;
+        background: transparent !important;
+        border-bottom: 1px solid #bab0b0 !important;
+    }
+
+
+
+}
+
+form {
+
+    button {
+        text-align: center;
+        margin: 0 auto;
+        height: 2.5rem;
+        width: 6rem;
+        margin-top: 1rem;
+    }
+}
